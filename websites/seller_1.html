@@ -4,42 +4,112 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Юрий Федотов - Локальный продавец | Местный рынок</title>
-        <meta name="description" content="Свежие товары от Юрий Федотов на Местный рынок. Локальный продавец с доставкой. Посмотрите ассортимент и цены.">
-        <meta name="keywords" content="товары, Местный рынок, Юрий Федотов, свежие продукты, локальный продавец, доставка">
-        <meta name="author" content="Юрий Федотов">
+        <title>Jsjds - Локальный продавец | Местный рынок</title>
+        <meta name="description" content="Свежие товары от Jsjds на Местный рынок. Локальный продавец с доставкой. Посмотрите ассортимент и цены.">
+        <meta name="keywords" content="товары, Местный рынок, Jsjds, свежие продукты, локальный продавец, доставка">
+        <meta name="author" content="Jsjds">
         <meta name="robots" content="index, follow">
         <link rel="canonical" href="https://jfedotovs.github.io/telegram-bot/websites/seller_1.html">
         
         <!-- Open Graph для соцсетей -->
-        <meta property="og:title" content="Юрий Федотов - Локальный продавец">
-        <meta property="og:description" content="Свежие товары от Юрий Федотов на Местный рынок. Локальный продавец с доставкой.">
+        <meta property="og:title" content="Jsjds - Локальный продавец">
+        <meta property="og:description" content="Свежие товары от Jsjds на Местный рынок. Локальный продавец с доставкой.">
         <meta property="og:image" content="https://jfedotovs.github.io/telegram-bot/qr/seller_1.png">
         <meta property="og:url" content="https://jfedotovs.github.io/telegram-bot/websites/seller_1.html">
         <meta property="og:type" content="website">
         
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Юрий Федотов - Локальный продавец">
-        <meta name="twitter:description" content="Свежие товары от Юрий Федотов на Местный рынок.">
+        <meta name="twitter:title" content="Jsjds - Локальный продавец">
+        <meta name="twitter:description" content="Свежие товары от Jsjds на Местный рынок.">
         <meta name="twitter:image" content="https://jfedotovs.github.io/telegram-bot/qr/seller_1.png">
         
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <style>
             
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: #333;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            font-family: 'Roboto', sans-serif;
+            color: #ecf0f1;
             min-height: 100vh;
         }
         .container {
-            background: rgba(255, 255, 255, 0.95);
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            background: rgba(44, 62, 80, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
             margin-top: 20px;
             margin-bottom: 20px;
             padding: 30px;
+        }
+        .bg-primary {
+            background: linear-gradient(45deg, #e74c3c, #c0392b) !important;
+            border-radius: 10px;
+            color: white !important;
+        }
+        .product-img {
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .product-img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+        }
+        .card {
+            border: 1px solid #34495e;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            background: #2c3e50;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            border-color: #e74c3c;
+        }
+        .qr-img {
+            max-width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .btn {
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: 1px solid #e74c3c;
+            background: #e74c3c;
+            color: white;
+        }
+        .btn:hover {
+            background: #c0392b;
+            border-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+        }
+        h1, h2, h3 {
+            font-weight: 700;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            color: #ecf0f1;
+        }
+        .text-success {
+            color: #27ae60 !important;
+            font-weight: 600;
+        }
+        .alert-info {
+            background: rgba(52, 73, 94, 0.8);
+            border: 1px solid #34495e;
+            border-radius: 10px;
+            color: #ecf0f1;
+        }
+        .bg-light {
+            background: rgba(52, 73, 94, 0.8) !important;
+            border-radius: 10px;
         }
         
         </style>
@@ -47,7 +117,7 @@
     <body>
         <div class="container my-4">
             <div class="bg-primary text-white p-4 rounded text-center mb-4">
-                <h1>Юрий Федотов</h1>
+                <h1>Jsjds</h1>
                 <p class="mb-0">📍 Местный рынок</p>
                 <p>🛒 Локальный продавец на платформе MarketBot</p>
             </div>
@@ -60,24 +130,35 @@
             <h2 class="text-center mb-4">🎯 Товары:</h2>
     
             <div class="card mb-3">
-                <a href="https://jfedotovs.github.io/telegram-bot/products/product_e5b9b675.jpg" target="_blank">
-                    <img src="https://jfedotovs.github.io/telegram-bot/products/product_e5b9b675.jpg" class="card-img-top product-img" alt="Товар">
+                <a href="https://jfedotovs.github.io/telegram-bot/products/product_0dbaa33e.jpg" target="_blank">
+                    <img src="https://jfedotovs.github.io/telegram-bot/products/product_0dbaa33e.jpg" class="card-img-top product-img" alt="Товар">
                 </a>
                 <div class="card-body">
-                    <h5 class="card-title">5 евро</h5>
-                    <p class="card-text text-success fw-bold">💶 Цена: 5.0€</p>
-                    <p class="card-text"><small class="text-muted">📅 Добавлено: 2026-01-28T13:08:06.431693</small></p>
+                    <h5 class="card-title">2 eur</h5>
+                    <p class="card-text text-success fw-bold">💶 Цена: 2.0€</p>
+                    <p class="card-text"><small class="text-muted">📅 Добавлено: 2026-01-28T13:43:46.950788</small></p>
                 </div>
             </div>
             
             <div class="card mb-3">
-                <a href="https://jfedotovs.github.io/telegram-bot/products/product_8d619ce9.jpg" target="_blank">
-                    <img src="https://jfedotovs.github.io/telegram-bot/products/product_8d619ce9.jpg" class="card-img-top product-img" alt="Товар">
+                <a href="https://jfedotovs.github.io/telegram-bot/products/product_3597b7ef.jpg" target="_blank">
+                    <img src="https://jfedotovs.github.io/telegram-bot/products/product_3597b7ef.jpg" class="card-img-top product-img" alt="Товар">
                 </a>
                 <div class="card-body">
-                    <h5 class="card-title">5 eur</h5>
+                    <h5 class="card-title">5 евро</h5>
                     <p class="card-text text-success fw-bold">💶 Цена: 5.0€</p>
-                    <p class="card-text"><small class="text-muted">📅 Добавлено: 2026-01-28T09:39:21.271729</small></p>
+                    <p class="card-text"><small class="text-muted">📅 Добавлено: 2026-01-28T13:14:50.564967</small></p>
+                </div>
+            </div>
+            
+            <div class="card mb-3">
+                <a href="https://jfedotovs.github.io/telegram-bot/products/product_5ae82a6c.jpg" target="_blank">
+                    <img src="https://jfedotovs.github.io/telegram-bot/products/product_5ae82a6c.jpg" class="card-img-top product-img" alt="Товар">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">5 евро</h5>
+                    <p class="card-text text-success fw-bold">💶 Цена: 5.0€</p>
+                    <p class="card-text"><small class="text-muted">📅 Добавлено: 2026-01-28T13:09:38.696635</small></p>
                 </div>
             </div>
             
@@ -99,7 +180,7 @@
         {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            "name": "Юрий Федотов",
+            "name": "Jsjds",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Daugavpils",
@@ -107,7 +188,7 @@
                 "addressCountry": "LV"
             },
             "priceRange": "€€",
-            "image": "https://placehold.co/600x400/green/white?text=Юрий+Федотов",
+            "image": "https://placehold.co/600x400/green/white?text=Jsjds",
             "telephone": "+371-XXX-XXXX"
         }
         </script>
